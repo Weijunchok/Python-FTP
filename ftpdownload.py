@@ -21,7 +21,7 @@ def downloadfile(ftp, remotepath, localpath):
     ftp.retrbinary("RETR " + remotepath, fp.write, bufsize)
     fp.close()
 #ftpconnect: FTP Server Host,Port,Username,Password
-ftp = ftpconnect("125.124.81.41", 21,"ftpuser", "Admin123456#")
+ftp = ftpconnect("host", 21,"user", "password")
 #FTP Current Path
 pwd_path = ftp.pwd()
 print("FTP Current Path:", pwd_path)
